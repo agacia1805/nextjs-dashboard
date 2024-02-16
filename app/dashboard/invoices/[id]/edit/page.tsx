@@ -10,9 +10,9 @@ export default async function Page({ params }: { params: { id: string } }) {
     fetchCustomers(),
   ]);
 
-    if (!invoice) {
-      notFound();
-    }
+  if (!invoice) {
+    notFound();
+  }
 
   return (
     <main>
